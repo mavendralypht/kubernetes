@@ -43,7 +43,6 @@ type metric struct {
 	AgeBuckets        uint32              `yaml:"ageBuckets,omitempty" json:"ageBuckets,omitempty"`
 	BufCap            uint32              `yaml:"bufCap,omitempty" json:"bufCap,omitempty"`
 	MaxAge            int64               `yaml:"maxAge,omitempty" json:"maxAge,omitempty"`
-	ConstLabels       map[string]string   `yaml:"constLabels,omitempty" json:"constLabels,omitempty"`
 }
 
 func (m metric) buildFQName() string {
