@@ -49,7 +49,7 @@ var (
 
 func main() {
 
-	flag.BoolVar(&ALL_STABILITY_CLASSES, "allstabilityclasses", false, "use this flag to enable all stability classes")
+	flag.BoolVar(&ALL_STABILITY_CLASSES, "allstabilityclasses", true, "use this flag to enable all stability classes")
 	flag.Parse()
 	if len(flag.Args()) < 1 {
 		fmt.Fprintf(os.Stderr, "USAGE: %s <DIR or FILE or '-'> [...]\n", os.Args[0])
