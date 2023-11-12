@@ -48,11 +48,6 @@ func decodeMetricCalls(fs []*ast.CallExpr, metricsImportName string, variables m
 	return ms, errors
 }
 
-type metricDecoder struct {
-	kubeMetricsImportName string
-	variables             map[string]ast.Expr
-}
-
 func (c *metricDecoder) decodeNewMetricCall(fc *ast.CallExpr) (*metric, error) {
 	var m metric
 	var err error
